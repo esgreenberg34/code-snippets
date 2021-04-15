@@ -1,0 +1,29 @@
+<div class="rps_ef59"><style type="text/css"><!-- .rps_ef59 html, .rps_ef59 body
+{ min-width: 260px; min-height: 100%; padding: 0; margin: 0 auto; background: #fff; }
+.rps_ef59 a img
+{ border: none; }
+.rps_ef59 .x_ReadMsgBody
+{ width: 100%; }
+.rps_ef59 .x_ExternalClass
+{ width: 100%; }
+.rps_ef59 .x_ExternalClass *
+{ line-height: 100%; }
+.rps_ef59 table, .rps_ef59 td
+{ border-collapse: collapse; }
+ --></style><style type="text/css"><!--  --></style>
+<div>
+<div>
+<div style="margin: 0px auto; max-width: 800px; min-width: 260px; font: 16px sans-serif, serif, EmojiFont;">
+<div style="text-align:center; font-size:0">
+<div style="width:190px; max-width:100%">
+<h1 style="margin: 20px auto; color: rgb(232, 226, 227); font: bold 32px sans-serif; text-align: left; width: 190px; letter-spacing: -0.05em;" color="rgb(232, 226, 227)">
+Title</h1>
+</div>
+</div>
+<div style="text-align:center; font-size:0">
+<div style="display: inline-block; font-size: 16px; text-align: left; color: rgb(232, 226, 227); background: rgb(0, 126, 178); vertical-align: top; width: 25%; min-width: 120px; max-width: 50%;" color="rgb(232, 226, 227)" bgcolor="rgb(0, 126, 178)">
+<a href="https://dribbble.com/shots/2012212-Ringo-John" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable" color="rgb(207, 142, 255)" style="color: rgb(207, 142, 255);"><img data-imagetype="External" src="test1.png" originalsrc="test1.png" data-connectorsauthtoken="1" data-imageproxyendpoint="/actions/ei" data-imageproxyid="" alt="" width="200" border="0" style="display:block; width:100%; height:auto; max-width:240px"></a> </div>
+<div style="display: inline-block; font-size: 16px; text-align: left; color: rgb(232, 226, 227); background: rgb(227, 79, 55); vertical-align: top; width: 25%; min-width: 120px; max-width: 50%;" color="rgb(232, 226, 227)" bgcolor="rgb(227, 79, 55)">
+<a href="https://dribbble.com/shots/2012212-Ringo-John" target="_blank" rel="noopener noreferrer" data-auth="NotApplicable" color="rgb(207, 142, 255)" style="color: rgb(207, 142, 255);"><img data-imagetype="External" src="test2.png" originalsrc="test2.png" data-connectorsauthtoken="1" data-imageproxyendpoint="/actions/ei" data-imageproxyid="" alt="" width="200" border="0" style="display:block; width:100%; height:auto; max-width:240px"></a> </div>
+</div>
+</div>

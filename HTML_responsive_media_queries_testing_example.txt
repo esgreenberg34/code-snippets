@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Media Queries</title>
+		<style type="text/css">
+			.block { display:inline-block; width:100px; height:100px; color:#fff; background:#333; white-space:nowrap; overflow:hidden; font:16px/100px sans-serif; }
+
+			@media only screen and (min-width:320px)
+			{
+				.block--1 { background:#001F3F !important; }
+			}
+
+			@media only screen and (max-width:1980px) 
+			{
+				.block--2 { background:#FFDC00 !important; }
+			}
+
+			@media only screen and (min-device-width:320px) 
+			{
+				.block--3 { background:#0074D9 !important; }
+			}
+
+			@media only screen and (max-device-width:1980px) 
+			{
+				.block--4 { background:#FF851B !important; }
+			}
+
+			@media only screen and (min-height:480px) 
+			{
+				.block--5 { background:#7FDBFF !important; }
+			}
+
+			@media only screen and (max-height:1080px) 
+			{
+				.block--6 { background:#FF4136 !important; }
+			}
+
+			@media only screen and (min-device-height:480px) 
+			{
+				.block--7 { background:#39CCCC !important; }
+			}
+
+			@media only screen and (max-device-height:1080px) 
+			{
+				.block--8 { background:#85144B !important; }
+			}
+
+			@media only screen and (min-width:320px) 
+			{
+				@media only screen and (max-width:480px) 
+				{
+					.block--9 { background:#001F3F !important; }
+				}
+			}
+
+			@media only screen and (min-width:320px) 
+			{
+				@media only screen and (max-width:480px) 
+				{
+					.block--10 { background:#001F3F !important; }
+
+					@media only screen and (min-width:400px) 
+					{
+						.block--11 { background:#FF851B !important; }
+					}
+				}
+			}
+
+			@media only print
+			{
+				.block { background:#fff; color:#333; }
+			}
+
+			@media yahoo {
+				.block--yahoo { background:#2ecc40; }
+			}
+		</style>
+	</head>
+	<body>
+		<div style="font-size:0; text-align:center;">
+			<div class="block block--1">Text</div>
+			<div class="block block--2">Text</div>
+			<div class="block block--3">Text</div>
+			<div class="block block--4">Text</div>
+			<div class="block block--5">Text</div>
+			<div class="block block--6">Text</div>
+			<div class="block block--7">Text</div>
+			<div class="block block--8">Text</div>
+			<div class="block block--9">Text</div>
+			<div class="block block--10">Text</div>
+			<div class="block block--11">Text</div>
+			<div class="block block--yahoo">Text</div>
+		</div>
+	</body>
+</html>
