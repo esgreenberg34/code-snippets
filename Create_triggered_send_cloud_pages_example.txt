@@ -1,0 +1,31 @@
+%%[
+VAR @TriggerSend, @TriggerSend_statusCode, @TriggerSendDefinition, @TriggerSendExternalKey, @TriggerSendSubscriber, @TriggerSendFirstName, @FirstName, @Emailaddress, @subscriberkey
+	SET @SubscriberKey = Format(SystemDateToLocalDate(NOW()), "yyddMMhhmmss")
+	SET @EmailAddress = "emailaddress"
+	SET @TriggerSendExternalKey = "000000"
+
+	/* Specify the external key of the TriggerSend */
+	SET @TriggerSend = CreateObject("TriggeredSend")
+	SET @TriggerSendDefinition = CreateObject("TriggeredSendDefinition")
+	SetObjectProperty(@TriggerSendDefinition, "CustomerKey", @TriggerSendExternalKey)
+	SetObjectProperty(@TriggerSend, "TriggeredSendDefinition", @TriggerSendDefinition)
+
+	/* Specify the email address and the subscriber key */
+	SET @TriggerSendSubscriber = CreateObject("Subscriber")
+	SetObjectProperty(@TriggerSendSubscriber, "EmailAddress", @EmailAddress) 
+	SetObjectProperty(@TriggerSendSubscriber, "SubscriberKey", @SubscriberKey) 
+
+	/* Fill out the FirstName field in the TriggerSend data extension */
+	SET @TriggerSendFirstName = CreateObject("Attribute")
+	SetObjectProperty(@TriggerSendFirstName, "Name", "FirstName")
+	SetObjectProperty(@TriggerSendFirstName,"Value", @FirstName)
+	AddObjectArrayItem(@TriggerSend, "Attributes", @TriggerSendFirstName)
+
+	AddObjectArrayItem(@TriggerSend, "Subscribers", @TriggerSendSubscriber)  
+
+	SET @TriggerSend_statusCode = InvokeCreate(@TriggerSend, @TriggerSend_statusMsg, @errorCode) 
+
+	IF @TriggerSend_statusCode != "OK" THEN
+		OUTPUTLINE(CONCAT("Status: ",@TriggerSend_statusMsg," / Code: ",@errorCode))
+	ENDIF
+]%%
