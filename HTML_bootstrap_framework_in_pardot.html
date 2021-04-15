@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>%%title%%</title>
+
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* Fonts Added 12.10.19 */
+      @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,regular,italic,600,600italic,700,700italic,800,800italic");
+      body {
+        font-family: "Open Sans", Helvetica, Arial, sans-serif !important;
+        font-size: 16px;
+        color: rgb(51, 51, 51) !important;
+        font-weight: 300;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Open Sans", Helvetica, Arial, sans-serif !important;
+        color: #c98622;
+      }
+
+      .headerbar {
+        border-bottom: 1px solid black;
+      }
+      .footertext {
+        color: white;
+      }
+      .footertext a {
+        color: white;
+      }
+      .headingorange {
+        color: #e75722;
+        font-size: 24px;
+      }
+      .penscofooter {
+        background-color: #008de5 !important;
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
+
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+      }
+
+      header.masthead {
+        position: relative;
+        background-color: #343a40;
+        background-size: cover;
+        padding-top: 5rem !important;
+        padding-bottom: 5rem !important;
+      }
+
+      header.masthead .overlay {
+        position: absolute;
+        background-color: #212529;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.3;
+      }
+
+      header.masthead h1 {
+        font-size: 2rem;
+      }
+
+      @media (min-width: 768px) {
+        header.masthead {
+          padding-top: 12rem;
+          padding-bottom: 12rem;
+        }
+        header.masthead h1 {
+          font-size: 3rem;
+        }
+      }
+
+      .showcase .showcase-text {
+        padding: 3rem;
+      }
+
+      .showcase .showcase-img {
+        min-height: 30rem;
+        background-size: cover;
+      }
+
+      @media (min-width: 768px) {
+        .showcase .showcase-text {
+          padding: 7rem;
+        }
+      }
+
+      .features-icons {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+      }
+
+      .features-icons .features-icons-item {
+        max-width: 20rem;
+      }
+
+      .features-icons .features-icons-item .features-icons-icon {
+        height: 7rem;
+      }
+
+      .features-icons .features-icons-item .features-icons-icon i {
+        font-size: 4.5rem;
+      }
+
+      .features-icons .features-icons-item:hover .features-icons-icon i {
+        font-size: 5rem;
+      }
+
+      .testimonials {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+      }
+
+      .testimonials .testimonial-item {
+        max-width: 18rem;
+      }
+
+      .testimonials .testimonial-item img {
+        max-width: 12rem;
+        box-shadow: 0px 5px 5px 0px #adb5bd;
+      }
+
+      .call-to-action {
+        position: relative;
+        background-color: #343a40;
+        background-size: cover;
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+      }
+
+      .call-to-action .overlay {
+        position: absolute;
+        background-color: #212529;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        opacity: 0.3;
+      }
+
+      footer.footer {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+      }
+
+      /* Form Styles */
+
+      #pardot-form p.form-field label {
+        text-align: left !important;
+        width: 100%;
+      }
+
+      #pardot-form p.form-field input,
+      #pardot-form select,
+      #pardot-form textarea {
+        width: 100%;
+      }
+
+      #pardot-form p.required label {
+        font-weight: bold;
+        background: none;
+      }
+
+      #pardot-form p.required label:after {
+        content: "  *";
+        color: #cc0000;
+      }
+
+      #pardot-form p.submit {
+        margin: 0px;
+        margin-top: 8px;
+        text-align: left;
+      }
+
+      #pardot-form p.submit input {
+        background-color: #dc5925;
+        color: #fff;
+        border-width: 0px;
+        border-radius: 5px;
+        padding: 12px 14px;
+      }
+
+      #pardot-form p.submit input:hover {
+        background-color: #e4835c;
+      }
+
+      #pardot-form p.error.no-label {
+        display: none;
+      }
+      /*# sourceMappingURL=style.css.map */
+
+      /* Updates Made 12.10.19 */
+
+      footer {
+        background-color: #3390ff;
+        color: #fff;
+        padding: 5rem 0;
+        line-height: 24px;
+      }
+      footer h5 {
+        color: #fff;
+      }
+
+      footer a {
+        color: #fff;
+      }
+
+      footer a:hover {
+        color: #e8e8e8;
+        text-decoration: none;
+      }
+
+      /* 12.19.19 Updates */
+
+      #pardot-form p.form-field {
+        max-width: 400px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img
+            src="logo.png"
+            style="width: 200px;"
+        /></a>
+      </div>
+    </nav>
+
+    <section class="pt-5">
+      <div class="container">
+        <div class="row align-items-left">
+          <div class="col-md-12 pt-4">
+            <div class="pt-5 pb-5">
+              <h2 pardot-region="title" pardot-region-type="simple">
+                Form
+              </h2>
+              <div pardot-region="main content" pardot-region-type="pardot">
+                <p>Text
+                </p>
+              </div>
+              %%content%%
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center pb-5">
+            <h5>Footer</h5>
+            <div class="social-icons d-flex justify-content-center">
+              <a
+                class="p-1"
+                href="logo.com"
+                target="_blank"
+                ><img
+                  src="logo.png"
+                  height="32"
+                  width="32"
+                  alt="logo"
+              /></a>
+ </div>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            pardot-region="Copyright"
+            class="col-md-6 text-center text-md-left"
+          >
+            &copy;
+            <script language="javascript" type="text/javascript">
+              var today = new Date();
+              var year = today.getFullYear();
+              document.write(year);
+            </script>
+            Footer
+          </div>
+          <div
+            pardot-region="Footer Links"
+            class="col-md-6 text-center text-md-right"
+          >
+            <a href="Privacy Policy Link" target="_blank"
+              >Privacy Policy</a
+            >
+          </div>
+        </div>
+        <div class="row pt-4">
+          <div pardot-region="Footer Text" class="col-md-12">
+            <p>
+             Text
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </body>
+</html>
